@@ -17,4 +17,14 @@ class ExampleProvider extends ChangeNotifier {
 
   double? get height => _height;
   double? get width => _width;
+
+  set height(double? newHeight) {
+    _height = newHeight;
+    notifyListeners();
+  }
+
+  set width(double? newWidth) {
+    _width = newWidth;
+    notifyListeners();
+  }
 }

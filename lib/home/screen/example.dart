@@ -9,6 +9,7 @@ class Example extends StatelessWidget {
   Widget build(BuildContext context) {
     var _width = Provider.of<ExampleProvider>(context).width;
     var _height = Provider.of<ExampleProvider>(context).height;
+    print("hejo");
     return Column(
       children: [
         AnimatedContainer(

@@ -18,6 +18,8 @@ class Home extends StatelessWidget {
                     Random().nextInt(350).toDouble();
                 Provider.of<ExampleProvider>(context, listen: false).width =
                     Random().nextInt(350).toDouble();
+                Provider.of<ExampleProvider>(context, listen: false).color =
+                    Colors.primaries[Random().nextInt(Colors.primaries.length)];
               },
               icon: const Icon(Icons.ramen_dining)),
         ),
